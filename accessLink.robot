@@ -6,7 +6,7 @@ Resource    steps.robot
 Open Wikipedia
     Open Webpage Wikipedia
 
-Check Assertation Language
+Check Link Wikipedia
     Checking Link English
     Checking Link Polski
     Checking Link Rusia
