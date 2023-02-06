@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230206 16:15:25.958" rpa="false" schemaversion="3">
+<suite id="s1" name="accessLink" source="D:\Kerja\Belajar Robot Framework\Test KarirLab\accessLink.robot">
+<test id="s1-t1" name="Open Wikipedia" line="6">
+<kw name="Open Webpage Wikipedia" library="steps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_test}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230206 16:15:26.101" level="INFO">Opening browser 'chrome' to base url 'https://www.wikipedia.org/'.</msg>
+<status status="PASS" starttime="20230206 16:15:26.101" endtime="20230206 16:15:27.519"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230206 16:15:27.519" endtime="20230206 16:15:27.632"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:15:32.632" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:15:27.632" endtime="20230206 16:15:32.632"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:26.101" endtime="20230206 16:15:32.632"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:26.100" endtime="20230206 16:15:32.633"/>
+</test>
+<test id="s1-t2" name="Check Assertation Language" line="9">
+<kw name="Checking Link English" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-en</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:15:32.634" endtime="20230206 16:15:32.655"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-en</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:15:32.656" level="INFO">Clicking link 'id=js-link-box-en'.</msg>
+<status status="PASS" starttime="20230206 16:15:32.656" endtime="20230206 16:15:32.927"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:15:37.927" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:15:32.927" endtime="20230206 16:15:37.927"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:15:37.927" endtime="20230206 16:15:37.941"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:32.634" endtime="20230206 16:15:37.941"/>
+</kw>
+<kw name="Checking Link Polski" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-pl</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:15:37.942" endtime="20230206 16:15:37.979"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-pl</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:15:37.979" level="INFO">Clicking link 'id=js-link-box-pl'.</msg>
+<status status="PASS" starttime="20230206 16:15:37.979" endtime="20230206 16:15:38.516"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:15:43.517" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:15:38.516" endtime="20230206 16:15:43.517"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:15:43.517" endtime="20230206 16:15:43.530"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:37.942" endtime="20230206 16:15:43.530"/>
+</kw>
+<kw name="Checking Link Rusia" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-ru</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:15:43.531" endtime="20230206 16:15:43.568"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-ru</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:15:43.568" level="INFO">Clicking link 'id=js-link-box-ru'.</msg>
+<status status="PASS" starttime="20230206 16:15:43.568" endtime="20230206 16:15:44.866"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:15:49.866" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:15:44.866" endtime="20230206 16:15:49.866"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:15:49.866" endtime="20230206 16:15:49.879"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:43.530" endtime="20230206 16:15:49.879"/>
+</kw>
+<kw name="Checking Link Japan" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-ja</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:15:49.880" endtime="20230206 16:15:49.912"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-ja</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:15:49.913" level="INFO">Clicking link 'id=js-link-box-ja'.</msg>
+<status status="PASS" starttime="20230206 16:15:49.913" endtime="20230206 16:15:51.246"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:15:56.247" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:15:51.246" endtime="20230206 16:15:56.247"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:15:56.247" endtime="20230206 16:15:56.259"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:49.879" endtime="20230206 16:15:56.260"/>
+</kw>
+<kw name="Checking Link Germany" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-de</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:15:56.260" endtime="20230206 16:15:56.294"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-de</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:15:56.294" level="INFO">Clicking link 'id=js-link-box-de'.</msg>
+<status status="PASS" starttime="20230206 16:15:56.294" endtime="20230206 16:15:59.326"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:16:04.326" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:15:59.326" endtime="20230206 16:16:04.326"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:16:04.326" endtime="20230206 16:16:04.337"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:56.260" endtime="20230206 16:16:04.338"/>
+</kw>
+<kw name="Checking Link France" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-fr</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:16:04.338" endtime="20230206 16:16:04.373"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-fr</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:16:04.373" level="INFO">Clicking link 'id=js-link-box-fr'.</msg>
+<status status="PASS" starttime="20230206 16:16:04.373" endtime="20230206 16:16:06.510"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:16:11.510" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:16:06.510" endtime="20230206 16:16:11.510"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:16:11.510" endtime="20230206 16:16:11.537"/>
+</kw>
+<status status="PASS" starttime="20230206 16:16:04.338" endtime="20230206 16:16:11.537"/>
+</kw>
+<kw name="Checking Link Espanol" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-es</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:16:11.538" endtime="20230206 16:16:11.555"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-es</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:16:11.555" level="INFO">Clicking link 'id=js-link-box-es'.</msg>
+<status status="PASS" starttime="20230206 16:16:11.555" endtime="20230206 16:16:12.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:16:17.842" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:16:12.842" endtime="20230206 16:16:17.842"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:16:17.842" endtime="20230206 16:16:17.874"/>
+</kw>
+<status status="PASS" starttime="20230206 16:16:11.538" endtime="20230206 16:16:17.874"/>
+</kw>
+<kw name="Checking Link Italia" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-it</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:16:17.875" endtime="20230206 16:16:17.892"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-it</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:16:17.892" level="INFO">Clicking link 'id=js-link-box-it'.</msg>
+<status status="PASS" starttime="20230206 16:16:17.892" endtime="20230206 16:16:19.362"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:16:24.364" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:16:19.363" endtime="20230206 16:16:24.364"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:16:24.364" endtime="20230206 16:16:24.394"/>
+</kw>
+<status status="PASS" starttime="20230206 16:16:17.874" endtime="20230206 16:16:24.394"/>
+</kw>
+<kw name="Checking Link Chinese" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-zh</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:16:24.395" endtime="20230206 16:16:24.412"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-zh</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:16:24.412" level="INFO">Clicking link 'id=js-link-box-zh'.</msg>
+<status status="PASS" starttime="20230206 16:16:24.412" endtime="20230206 16:16:24.987"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:16:29.987" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:16:24.987" endtime="20230206 16:16:29.987"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:16:29.987" endtime="20230206 16:16:30.002"/>
+</kw>
+<status status="PASS" starttime="20230206 16:16:24.394" endtime="20230206 16:16:30.002"/>
+</kw>
+<kw name="Checking Link Arabic" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-fa</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230206 16:16:30.003" endtime="20230206 16:16:30.035"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-fa</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230206 16:16:30.036" level="INFO">Clicking link 'id=js-link-box-fa'.</msg>
+<status status="PASS" starttime="20230206 16:16:30.035" endtime="20230206 16:16:31.099"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230206 16:16:36.099" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230206 16:16:31.099" endtime="20230206 16:16:36.099"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230206 16:16:36.099" endtime="20230206 16:16:36.130"/>
+</kw>
+<status status="PASS" starttime="20230206 16:16:30.003" endtime="20230206 16:16:36.130"/>
+</kw>
+<status status="PASS" starttime="20230206 16:15:32.634" endtime="20230206 16:16:36.131"/>
+</test>
+<status status="PASS" starttime="20230206 16:15:25.959" endtime="20230206 16:16:36.132"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="accessLink">accessLink</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
