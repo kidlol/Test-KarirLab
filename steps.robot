@@ -17,6 +17,7 @@ Open Webpage Wikipedia With Size
 
 Open Webpage Wikipedia Multiple Window
     Open Browser    ${url_test}    chrome
+    Set Window Position    100    100
 
 Checking English
     Wait Until Element Is Enabled    id=js-link-box-en

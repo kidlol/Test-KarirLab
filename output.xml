@@ -1,210 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230220 09:40:17.410" rpa="false" schemaversion="3">
-<suite id="s1" name="assertationLanguage" source="D:\Kerja\Belajar Robot Framework\Test KarirLab\assertationLanguage.robot">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230220 12:43:26.832" rpa="false" schemaversion="3">
+<suite id="s1" name="accessLink" source="D:\Kerja\Belajar Robot Framework\Test KarirLab\accessLink.robot">
 <test id="s1-t1" name="Open Wikipedia" line="6">
-<kw name="Open Webpage Wikipedia With Size" library="steps">
+<kw name="Open Webpage Wikipedia Multiple Window" library="steps">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url_test}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230220 09:40:17.547" level="INFO">Opening browser 'chrome' to base url 'https://www.wikipedia.org/'.</msg>
-<status status="PASS" starttime="20230220 09:40:17.546" endtime="20230220 09:40:18.956"/>
+<msg timestamp="20230220 12:43:26.968" level="INFO">Opening browser 'chrome' to base url 'https://www.wikipedia.org/'.</msg>
+<status status="PASS" starttime="20230220 12:43:26.967" endtime="20230220 12:43:28.397"/>
 </kw>
-<kw name="Set Window Size" library="SeleniumLibrary">
-<arg>820</arg>
-<arg>1180</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20230220 09:40:18.957" endtime="20230220 09:40:19.075"/>
+<kw name="Set Window Position" library="SeleniumLibrary">
+<arg>100</arg>
+<arg>100</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" starttime="20230220 12:43:28.397" endtime="20230220 12:43:28.515"/>
 </kw>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>chrome</arg>
-<arg>WINDOWS+ARROW_LEFT</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230220 09:40:19.075" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230220 09:40:19.552" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230220 09:40:19.552" level="FAIL">Element with locator 'chrome' not found.</msg>
-<status status="FAIL" starttime="20230220 09:40:19.075" endtime="20230220 09:40:19.563"/>
+<status status="PASS" starttime="20230220 12:43:26.967" endtime="20230220 12:43:28.515"/>
+</kw>
+<status status="PASS" starttime="20230220 12:43:26.967" endtime="20230220 12:43:28.515"/>
+</test>
+<test id="s1-t2" name="Check Link Wikipedia" line="9">
+<kw name="Checking Link English" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-en</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230220 12:43:28.516" endtime="20230220 12:43:28.536"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-en</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230220 12:43:28.537" level="INFO">Clicking link 'id=js-link-box-en'.</msg>
+<status status="PASS" starttime="20230220 12:43:28.536" endtime="20230220 12:43:28.973"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 09:40:19.563" endtime="20230220 09:40:19.563"/>
+<msg timestamp="20230220 12:43:33.973" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230220 12:43:28.973" endtime="20230220 12:43:33.973"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url_test}</arg>
-<arg>firefox</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" starttime="20230220 09:40:19.563" endtime="20230220 09:40:19.563"/>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230220 12:43:33.973" endtime="20230220 12:43:33.997"/>
 </kw>
-<kw name="Set Window Size" library="SeleniumLibrary">
-<arg>414</arg>
-<arg>896</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="NOT RUN" starttime="20230220 09:40:19.563" endtime="20230220 09:40:19.563"/>
+<status status="PASS" starttime="20230220 12:43:28.516" endtime="20230220 12:43:33.997"/>
+</kw>
+<kw name="Checking Link Polski" library="steps">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=js-link-box-pl</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230220 12:43:33.998" endtime="20230220 12:43:34.017"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=js-link-box-pl</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230220 12:43:34.017" level="INFO">Clicking link 'id=js-link-box-pl'.</msg>
+<status status="PASS" starttime="20230220 12:43:34.017" endtime="20230220 12:43:34.669"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 09:40:19.563" endtime="20230220 09:40:19.563"/>
+<msg timestamp="20230220 12:43:39.669" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230220 12:43:34.669" endtime="20230220 12:43:39.669"/>
 </kw>
-<status status="FAIL" starttime="20230220 09:40:17.546" endtime="20230220 09:40:19.564"/>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<msg timestamp="20230220 12:43:39.671" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C637D3]
+	(No symbol) [0x00BF8B81]
+	(No symbol) [0x00AFB36D]
+	(No symbol) [0x00ADE5DA]
+	(No symbol) [0x00B4F0CB]
+	(No symbol) [0x00B60A56]
+	(No symbol) [0x00B4B216]
+	(No symbol) [0x00B20D97]
+	(No symbol) [0x00B2253D]
+	GetHandleVerifier [0x00EDABF2+2510930]
+	GetHandleVerifier [0x00F08EC1+2700065]
+	GetHandleVerifier [0x00F0C86C+2714828]
+	GetHandleVerifier [0x00D13480+645344]
+	(No symbol) [0x00C00FD2]
+	(No symbol) [0x00C06C68]
+	(No symbol) [0x00C06D4B]
+	(No symbol) [0x00C10D6B]
+	BaseThreadInitThunk [0x75F36BD9+25]
+	RtlGetFullPathName_UEx [0x77658FD2+1218]
+	RtlGetFullPathName_UEx [0x77658F9D+1165]
+</msg>
+<msg timestamp="20230220 12:43:39.673" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C637D3]
+	(No symbol) [0x00BF8B81]
+	(No symbol) [0x00AFB36D]
+	(No symbol) [0x00ADE5DA]
+	(No symbol) [0x00B4F0CB]
+	(No symbol) [0x00B60A56]
+	(No symbol) [0x00B4B216]
+	(No symbol) [0x00B20D97]
+	(No symbol) [0x00B2253D]
+	GetHandleVerifier [0x00EDABF2+2510930]
+	GetHandleVerifier [0x00F08EC1+2700065]
+	GetHandleVerifier [0x00F0C86C+2714828]
+	GetHandleVerifier [0x00D13480+645344]
+	(No symbol) [0x00C00FD2]
+	(No symbol) [0x00C06C68]
+	(No symbol) [0x00C06D4B]
+	(No symbol) [0x00C10D6B]
+	BaseThreadInitThunk [0x75F36BD9+25]
+	RtlGetFullPathName_UEx [0x77658FD2+1218]
+	RtlGetFullPathName_UEx [0x77658F9D+1165]
+</msg>
+<status status="FAIL" starttime="20230220 12:43:39.669" endtime="20230220 12:43:39.675"/>
 </kw>
-<status status="FAIL" starttime="20230220 09:40:17.546" endtime="20230220 09:40:19.564">Element with locator 'chrome' not found.</status>
+<status status="FAIL" starttime="20230220 12:43:33.998" endtime="20230220 12:43:39.675"/>
+</kw>
+<kw name="Checking Link Rusia" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.675" endtime="20230220 12:43:39.675"/>
+</kw>
+<kw name="Checking Link Japan" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.675" endtime="20230220 12:43:39.675"/>
+</kw>
+<kw name="Checking Link Germany" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.675" endtime="20230220 12:43:39.675"/>
+</kw>
+<kw name="Checking Link France" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.676" endtime="20230220 12:43:39.676"/>
+</kw>
+<kw name="Checking Link Espanol" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.676" endtime="20230220 12:43:39.676"/>
+</kw>
+<kw name="Checking Link Italia" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.676" endtime="20230220 12:43:39.676"/>
+</kw>
+<kw name="Checking Link Chinese" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.676" endtime="20230220 12:43:39.676"/>
+</kw>
+<kw name="Checking Link Arabic" library="steps">
+<status status="NOT RUN" starttime="20230220 12:43:39.676" endtime="20230220 12:43:39.676"/>
+</kw>
+<status status="FAIL" starttime="20230220 12:43:28.516" endtime="20230220 12:43:39.676">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C637D3]
+	(No symbol) [0x00BF8B81]
+	(No symbol) [0x00AFB36D]
+	(No symbol) [0x00ADE5DA]
+	(No symbol) [0x00B4F0CB]
+	(No symbol) [0x00B60A56]
+	(No symbol) [0x00B4B216]
+	(No symbol) [0x00B20D97]
+	(No symbol) [0x00B2253D]
+	GetHandleVerifier [0x00EDABF2+2510930]
+	GetHandleVerifier [0x00F08EC1+2700065]
+	GetHandleVerifier [0x00F0C86C+2714828]
+	GetHandleVerifier [0x00D13480+645344]
+	(No symbol) [0x00C00FD2]
+	(No symbol) [0x00C06C68]
+	(No symbol) [0x00C06D4B]
+	(No symbol) [0x00C10D6B]
+	BaseThreadInitThunk [0x75F36BD9+25]
+	RtlGetFullPathName_UEx [0x77658FD2+1218]
+	RtlGetFullPathName_UEx [0x77658F9D+1165]
+</status>
 </test>
-<test id="s1-t2" name="Check Assertation Language" line="9">
-<kw name="Checking English" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-en</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.565" endtime="20230220 09:40:19.583"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-en</arg>
-<arg>English</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.598" level="INFO">Element 'id=js-link-box-en' contains text 'English'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.584" endtime="20230220 09:40:19.598"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.565" endtime="20230220 09:40:19.598"/>
-</kw>
-<kw name="Checking Polski" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-pl</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.598" endtime="20230220 09:40:19.620"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-pl</arg>
-<arg>Polski</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.632" level="INFO">Element 'id=js-link-box-pl' contains text 'Polski'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.620" endtime="20230220 09:40:19.632"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.598" endtime="20230220 09:40:19.632"/>
-</kw>
-<kw name="Checking Rusia" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-ru</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.632" endtime="20230220 09:40:19.646"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-ru</arg>
-<arg>Русский</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.657" level="INFO">Element 'id=js-link-box-ru' contains text 'Русский'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.646" endtime="20230220 09:40:19.657"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.632" endtime="20230220 09:40:19.657"/>
-</kw>
-<kw name="Checking Japan" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-ja</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.658" endtime="20230220 09:40:19.672"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-ja</arg>
-<arg>日本語</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.682" level="INFO">Element 'id=js-link-box-ja' contains text '日本語'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.672" endtime="20230220 09:40:19.682"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.658" endtime="20230220 09:40:19.682"/>
-</kw>
-<kw name="Checking Germany" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-de</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.683" endtime="20230220 09:40:19.697"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-de</arg>
-<arg>Deutsch</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.708" level="INFO">Element 'id=js-link-box-de' contains text 'Deutsch'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.697" endtime="20230220 09:40:19.708"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.683" endtime="20230220 09:40:19.708"/>
-</kw>
-<kw name="Checking France" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-fr</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.709" endtime="20230220 09:40:19.724"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-fr</arg>
-<arg>Français</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.735" level="INFO">Element 'id=js-link-box-fr' contains text 'Français'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.724" endtime="20230220 09:40:19.735"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.709" endtime="20230220 09:40:19.735"/>
-</kw>
-<kw name="Checking Espanol" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-es</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.736" endtime="20230220 09:40:19.750"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-es</arg>
-<arg>Español</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.761" level="INFO">Element 'id=js-link-box-es' contains text 'Español'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.750" endtime="20230220 09:40:19.761"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.736" endtime="20230220 09:40:19.761"/>
-</kw>
-<kw name="Checking Italia" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-it</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.762" endtime="20230220 09:40:19.776"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-it</arg>
-<arg>Italiano</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.786" level="INFO">Element 'id=js-link-box-it' contains text 'Italiano'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.776" endtime="20230220 09:40:19.787"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.761" endtime="20230220 09:40:19.787"/>
-</kw>
-<kw name="Checking Chinese" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-zh</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.787" endtime="20230220 09:40:19.801"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-zh</arg>
-<arg>中文</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.812" level="INFO">Element 'id=js-link-box-zh' contains text '中文'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.801" endtime="20230220 09:40:19.812"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.787" endtime="20230220 09:40:19.813"/>
-</kw>
-<kw name="Checking Arabic" library="steps">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=js-link-box-fa</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20230220 09:40:19.813" endtime="20230220 09:40:19.828"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=js-link-box-fa</arg>
-<arg>فارسی</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230220 09:40:19.839" level="INFO">Element 'id=js-link-box-fa' contains text 'فارسی'.</msg>
-<status status="PASS" starttime="20230220 09:40:19.828" endtime="20230220 09:40:19.839"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.813" endtime="20230220 09:40:19.839"/>
-</kw>
-<status status="PASS" starttime="20230220 09:40:19.565" endtime="20230220 09:40:19.839"/>
-</test>
-<status status="FAIL" starttime="20230220 09:40:17.410" endtime="20230220 09:40:19.840"/>
+<status status="FAIL" starttime="20230220 12:43:26.834" endtime="20230220 12:43:39.678"/>
 </suite>
 <statistics>
 <total>
@@ -213,10 +181,35 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" skip="0" id="s1" name="assertationLanguage">assertationLanguage</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="accessLink">accessLink</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230220 09:40:19.075" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20230220 12:43:39.671" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00C637D3]
+	(No symbol) [0x00BF8B81]
+	(No symbol) [0x00AFB36D]
+	(No symbol) [0x00ADE5DA]
+	(No symbol) [0x00B4F0CB]
+	(No symbol) [0x00B60A56]
+	(No symbol) [0x00B4B216]
+	(No symbol) [0x00B20D97]
+	(No symbol) [0x00B2253D]
+	GetHandleVerifier [0x00EDABF2+2510930]
+	GetHandleVerifier [0x00F08EC1+2700065]
+	GetHandleVerifier [0x00F0C86C+2714828]
+	GetHandleVerifier [0x00D13480+645344]
+	(No symbol) [0x00C00FD2]
+	(No symbol) [0x00C06C68]
+	(No symbol) [0x00C06D4B]
+	(No symbol) [0x00C10D6B]
+	BaseThreadInitThunk [0x75F36BD9+25]
+	RtlGetFullPathName_UEx [0x77658FD2+1218]
+	RtlGetFullPathName_UEx [0x77658F9D+1165]
+</msg>
 </errors>
 </robot>
