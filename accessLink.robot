@@ -4,7 +4,7 @@ Resource    steps.robot
 
 *** Test Cases ***
 Open Wikipedia
-    Open Webpage Wikipedia
+    Open Webpage Wikipedia Multiple Window
 
 Check Link Wikipedia
     Checking Link English

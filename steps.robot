@@ -5,11 +5,18 @@ Library    XML
 *** Variables ***
 ${url_test}            https://www.wikipedia.org/
 
+
 *** Keywords ***
-Open Webpage Wikipedia
+Open Webpage Wikipedia With Size
     Open Browser    ${url_test}    chrome
-    Maximize Browser Window
+    Set Window Size    820    1180
     Sleep    5
+    Open Browser    ${url_test}    firefox
+    Set Window Size    414    896
+    Sleep    5
+
+Open Webpage Wikipedia Multiple Window
+    Open Browser    ${url_test}    chrome
 
 Checking English
     Wait Until Element Is Enabled    id=js-link-box-en

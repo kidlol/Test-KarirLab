@@ -1,0 +1,3 @@
+test baru
+membuka multiple window browser secara bersamaan
+membuka window dengan size window beragam (mobile, tab, window)

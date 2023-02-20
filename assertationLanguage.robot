@@ -4,7 +4,7 @@ Resource    steps.robot
 
 *** Test Cases ***
 Open Wikipedia
-    Open Webpage Wikipedia
+    Open Webpage Wikipedia With Size
 
 Check Assertation Language
     Checking English
